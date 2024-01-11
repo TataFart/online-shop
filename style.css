@@ -1,7 +1,10 @@
 :root {
     --3: #2D2D2D;
    }
-   
+
+*{
+    box-sizing: border-box;
+}   
 body {
     margin: 0;
     max-height: 100vh;
@@ -23,11 +26,13 @@ body {
         color: var(--3);
 }
 
+.wrapper {
+    max-width: 1830px;
+    margin: 0 auto;
+}
 
-
-.article {
-    max-width: 1770px;
-    margin: 0 auto;;
+.article {    
+    
     padding: 80px 75px;
 }
 
@@ -64,7 +69,6 @@ body {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 .arrow {
@@ -72,3 +76,7 @@ body {
     height: 24px;
     vertical-align: middle;
 }
+
+.arrow:first-child {
+    margin-right: 10px;
+}  
