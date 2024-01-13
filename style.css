@@ -1,15 +1,38 @@
+@font-face {
+    font-family: Lato;
+    src: local("Lato"), local("Lato Regular"),         
+         url(./fonts/lato-regular.woff2) format("woff2"),
+         url(./fonts/lato-regular.woff) format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Lato;
+    src: local("Lato Bold"), local("Lato-Bold"),
+         url(./fonts/lato-bold.woff2) format("woff2"),
+         url(./fonts/lato-bold.woff) format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
 :root {
     --3: #2D2D2D;
    }
 
 *{
     box-sizing: border-box;
-}   
+}
+   
 body {
     margin: 0;
     max-height: 100vh;
     box-sizing: border-box;
-    font-family: -aap-system,
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    color: var(--3);
+    font-family: Lato, -aap-system,
         BlinkMacSystemFont,
         "Segoe UI",
         Roboto,
@@ -20,23 +43,20 @@ body {
         Cantarell,
         "Helvetica Neue",
         Arial,
-        sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        color: var(--3);
+        sans-serif;              
 }
 
 .wrapper {
     max-width: 1830px;
     margin: 0 auto;
+    padding: 0 30px; 
 }
 
-.article {    
-    
+.article {        
     padding: 80px 0;
 }
 
-.head {
+.title {
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 50px;    
