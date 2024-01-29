@@ -15,16 +15,14 @@
     margin: 0 0 40px;
 }
 
-.article__text_margin-button_null {  
-    margin: 0;
+.article__text:last-child {  
+    margin-bottom: 0;
 }
 
 .article__author {
     margin: 0;
     float: right;
 }
-
-
 
 .article__link-back{
     line-height: 24px;
@@ -49,3 +47,7 @@
     margin-right: 10px;
     color: var(--3);
 }  
+
+.article__elem:not(:last-child) {
+    margin-bottom: 150px;
+}

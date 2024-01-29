@@ -1,4 +1,4 @@
-@import url(/article/css/article.css);
+@import url(./article/css/article.css);
 
 @font-face {
     font-family: Lato;
@@ -54,6 +54,3 @@ body {
     padding: 0 30px; 
 }
 
-.wrap-text {
-    margin-bottom: 150px;
-}
