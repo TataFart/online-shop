@@ -1,4 +1,7 @@
 @import url(./article/css/article.css);
+@import url(normolize.css);
+@import url(index.css);
+@import url(global-style.css);
 
 @font-face {
     font-family: Lato;
@@ -26,31 +29,5 @@
     box-sizing: border-box;
 }
    
-body {
-    margin: 0;
-    max-height: 100vh;
-    box-sizing: border-box;
-    font-weight: 400;
-    font-size: 22px;
-    font-style: normal;
-    color: var(--3);
-    font-family: Lato, -aap-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        "Fira Sans",
-        "Driod Sans",
-        Ubuntu,
-        Cantarell,
-        "Helvetica Neue",
-        Arial,
-        sans-serif;              
-}
 
-.container {
-    max-width: 1830px;
-    margin: 0 auto;
-    padding: 0 30px; 
-}
 
