@@ -70,17 +70,6 @@ h1, h2, h3, p, figure, fieldset {
     margin: 0;
 }
 
-/* .section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flow-root;
-} */
-
-.container {
-    max-width: 1770px;
-    padding: 0 30px;
-    margin: 0 auto;   
-}
 
 .visually-hidden {
     position: absolute !important;
