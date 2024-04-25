@@ -14,45 +14,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
 
     <title>CRM-form</title>
+    <script defer src="./main.js"></script>
 </head>
 <body>
 
     <section class="modal">
         <div class="container">
+           
             <form action="" class="form">
                 <h1 class="form__title">добавить товар</h1>
 
-                <fieldset class="form__fieldset">
+                <fieldset class="form__fieldset form__grid">
+
                     <legend class="fieldset__legend visually-hidden">Заполните форму</legend>
 
-                    <label for="name" class="form__label">Наименование</label>
-                    <input type="text" name="name" id="name" class="form__input">
+                    <div class="form__grid-item form__grid-item_area_name">
+                        <label for="name" class="form__label">Наименование</label>
+                        <input type="text" name="name" id="name" class="form__input">
+                    </div>
                     
-                    <label for="" class="form__label">Категория</label>
-                    <input type="text" id="category"  name="category" class="form__input">
+                    <div class="form__grid-item form__grid-item_area_category">
+                        <label for="" class="form__label">Категория</label>
+                        <input type="text" id="category"  name="category" class="form__input">
+                    </div>
                     
-                    <label for="unit" class="form__label"> Единицы измерения</label>
-                    <input type="text" id="unit" name="unit" class="form__input">
+                    <div class="form__grid-item form__grid-item_area_unit">
+                        <label for="unit" class="form__label"> Единицы измерения</label>
+                        <input type="text" id="unit" name="unit" class="form__input">
+                    </div>
 
                                                                   
-                    <label for="discont" class="form__label"> Дисконт</label>
-                    <input type="checkbox" id="discont" class="form__ch-box" >
-                    <input type="text"  class="form__input form__input_addition" disabled>
+                    <div class="form__grid-item form__grid-item_area_discont">
+                        <label for="discont" class="form__label"> Дисконт</label>
+                        <input type="checkbox" id="discont" class="form__ch-box" >
+                        <input type="text"  class="form__input form__input_addition" disabled>
+                    </div>
                                                                               
-                    <label for="description" class="form__label">Описание</label>
-                    <textarea  id="description" name="description" rows="4" class="form__textarea"></textarea>
+                    <div class="form__grid-item form__grid-item_area_descript">
+                        <label for="description" class="form__label">Описание</label>
+                        <textarea  id="description" name="description" rows="4" class="form__textarea"></textarea>
+                    </div>
                     
-                    <label for="amount" class="form__label"> Количество</label>
-                    <input type="number" id="amount" name="amount" class="form__input">
+                    <div class="form__grid-item form__grid-item_area_amount">
+                        <label for="amount" class="form__label"> Количество</label>
+                        <input type="number" id="amount" name="amount" class="form__input">
+                    </div>
                     
-                    <label for="pricr" class="form__label">Цена</label>
-                    <input type="text" id="price" name="price" class="form__input">
+                    <div class="form__grid-item form__grid-item_area_price">
+                        <label for="pricr" class="form__label">Цена</label>
+                        <input type="text" id="price" name="price" class="form__input">
+                    </div>
+
+                    <button type="file" class="form__btn form__btn_action_add form__grid-item_area_btn">Добавить изображение</button>
                     
              </fieldset>
 
+           
+
              <div class="form__submit">
-                <button class="form__submit-btn">Добавить товар</button>
+                <p class="form__total-coast">Итоговая стоимость:<span class="form__total-sum"> $ 900.00</span></p>
+                <button class="form__btn form__btn_action_submit">Добавить товар</button>
             </div>
+
+          
+
+            <button type="button" class="form__close-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round"/>
+                </svg></button>
             </form>
         </div>
     </section>

@@ -25,9 +25,21 @@ input {
     padding-top: 50px;
     padding-bottom: 50px;
     
+    
+}
+
+.form__close-btn {
+    border: none;
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    background-color: transparent;
+
 }
 
 .form {
+    position: relative;
     text-transform: uppercase;
     background-color: #F4F2FF;
     color: #6E6893;
@@ -48,7 +60,9 @@ input {
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 2.4px;
-}
+    border-bottom: 1px solid rgb(198, 194, 222);
+    padding-bottom: 21px;
+    }
 
 .form::before {    
     content:"";
@@ -134,7 +148,7 @@ input {
     width: 50%;
 }
 
-.form__submit-btn {
+.form__btn {
     padding: 10px 25px;
     border-radius: 6px;
     background-color: #6D5BD0;
@@ -148,10 +162,20 @@ input {
     border: none;
 }
 
+.form__btn_action_add {
+    font-size: 14px; 
+}
+/* 
+.form__btn_action_submit {
+    display: inline-block;
+} */
+
 .form__submit {
+    display: flex;
     max-width: 580px;
-    text-align: right;
+    justify-content: space-between;
     margin: 0 auto;
+    
 }
 
 .form__ch-box {   
@@ -195,10 +219,65 @@ input {
 }
 
 .form__input_addition {
-    float: right;   
-    width: 90%;
+    margin-left: 50px;
+    max-width: 200px;
 }
-
 .form__input_addition:disabled {
     background-color: #eee;
+}
+
+.form__total-coast {
+    font-weight: 500;
+    text-transform: none;
+    font-size: 14px;
+    color: #6e6893;
+}
+
+.form__total-sum {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6d5bd0;
+}
+
+.form__grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+    grid-template-areas: 'name descript'
+                        'category descript'
+                        'unit amount'
+                        'discont price'
+                        '. btn';
+}
+.form__grid-item_area_name {
+    grid-area: name;
+}
+.form__grid-item_area_category {
+    grid-area: category;
+}
+
+.form__grid-item_area_unit {
+    grid-area: unit;
+}
+
+.form__grid-item_area_discont {
+     grid-area: discont;
+}
+.form__grid-item_area_descript {
+     grid-area: descript;
+}
+.form__grid-item_area_amount {
+     grid-area: amount;
+}
+.form__grid-item_area_price {
+     grid-area: price;
+}
+.form__grid-item_area_btn {
+     grid-area: btn;
+}
+
+@media (max-width: 840px) {
+    .form{
+        max-width: 700px;
+    }
 }
